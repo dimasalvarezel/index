@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gem sppace runner javascript</title>
+</head>
+<body>
+	<canvas id="canvas">Your browser not support</canvas>
+	<style>
+		#canvas{
+			border: 1px solid #000000;
+			width: 960px;
+			height: 600px;
+		}
+
+	</style>
+
+	
+	<script>	
+		window.onload = init();
+		function init(){
+			canvas = document.getElementById('canvas');
+			cw = canvas.width =960;
+			ch = canvas.height =600;
+			pen = canvas.getContext('2d');
+			console.log(pen);
+
+			pen.beginPath();
+			pen.fillStyle = 'green';
+			pen.rect(10,10,100,100);
+			pen.fill();
+
+			
+			pen.beginPath();
+			pen.fillStyle = 'red';
+			pen.rect(850,490,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'black';
+			pen.rect(850,10,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'blue';
+			pen.rect(10,490,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'orange';
+			pen.rect(cw / 2 - 50,ch / 2 - 50,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'orange';
+			pen.rect(cw / 2 - 50,10,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'orange';
+			pen.rect(cw / 2 - 50,ch - 110,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'orange';
+			pen.rect(cw / 2 - 50,ch - 110,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'orange';
+			pen.rect(10,ch / 2 - 50,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'orange';
+			pen.rect(850,ch / 2 - 50,100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'pink';
+			pen.rect(cw / 2 + cw / 4 - (50/2) + (100/4), ch / 4 - (50/2),100,100);
+			pen.fill();
+
+			pen.beginPath();
+			pen.fillStyle = 'pink';
+			pen.rect(cw / 4 - (50/2),ch / 4 - (50/2),100,100);
+			pen.fill();
+
+
+
+
+
+
+
+
+			
+		}
+		//console.log('javascript active');
+	</script>
+
+</body>
+</html>
